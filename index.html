@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox</title>
+    <link rel="stylesheet" href="style2.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+    <!--Navibar-->
+    <div class="navbar">
+        <ul class="navlist">
+            <li class="navitem">Giới thiệu</li>
+            <li class="navitem">Kết nối</li>
+            <li class="navitem">Tải về</li>
+        </ul>
+        <ul class="navlist">
+            <li class="navitem">Đăng ký</li>
+            <li class="navitem">Đăng nhập</li>
+        </ul>
+    </div>
+
+    <!--Form-->
+    <div class="form-container">
+        <form action="" class="form">
+            <div class="form-row">
+                <label for="name" class="form-label">Name</label>   
+                <input type="text" class="form-input" id="name" placeholder="name" required/>
+            </div>
+            <div class="form-row">
+                <label for="password" class="form-label">Password</label>   
+                <input type="password" class="form-input" id="password" placeholder="password" required/>
+            </div>
+        </form>
+    </div>
+
+    <!--Slide column-->
+    <div class="column-layout">
+        <div class="column-item column-one">
+            <h2>Slide1</h2>
+            <p>Quảng cáo chạy ở đoạn này</p>
+            <p>Phương thức hoạt động của CSS là nó sẽ tìm dựa vào các vùng chọn, vùng chọn có thể là tên một thẻ HTML, tên một ID, class hay nhiều kiểu khác. <br>Sau đó là nó sẽ áp dụng các thuộc tính cần thay đổi lên vùng chọn đó.</p>
+        </div>
+        <div class="column-item column-two">
+            <h2>Slide2</h2>
+            <p>CSS là chữ viết tắt của Cascading Style Sheets, nó là một ngôn ngữ được sử dụng để tìm và định dạng lại các phần tử được tạo ra bởi các ngôn ngữ đánh dấu (HTML).</p>
+            <p>Bạn có thể hiểu đơn giản rằng, nếu HTML đóng vai trò định dạng các phần tử trên website như việc tạo ra các đoạn văn bản, các tiêu đề, bảng,…</p>
+        </div>
+        <div class="column-item column-three">
+            <h2>Slide3</h2>
+            <p>Quảng cáo hoặc các nội dung khác</p>
+            <p>Bố cục CSS thường chủ yếu dựa vào hình hộp và mỗi hộp đều chiếm những khoảng trống trên trang của bạn với các thuộc tính như:</p>
+        </div>
+    </div>
+
+    <!--Feature-->
+    <div class="feature-layout">
+        <div class="feature-item">
+            <h2>Feature 1</h2>
+            <p><b>Bộ chọn (Selector):</b> là mẫu để chọn phần tử HTML mà bạn muốn định nghĩa phong cách. Các selector được áp dụng cho các trường hợp sau:<br>
+                - Tất cả phần tử theo một dạng cụ thể nào đó, ví dụ phần tử tiêu đề h1.<br>
+                - Thuộc tính id và class của các phần tử.<br>
+                - Các phần tử dựa vào mối liên quan với các phần tử khác trong cây phân cấp tài liệu.</p>
+        </div>
+        <div class="feature-item">
+            <h2>Feature 2</h2>
+            <p><b>Khai báo (Declaration):</b> Khối khai báo chứa một hoặc nhiều khai báo, phân tách với nhau bằng các dấu chấm phẩy. Mỗi khai báo gồm tên và giá trị đặc tính CSS, phân tách bằng dấu phẩy. Khai báo CSS luôn kết thúc bằng dấu chấm phẩy, khối khai báo nằm trong các dấu ngoặc móc. Trong ví dụ dưới đây, các phần tử sẽ được căn giữa, chữ màu đỏ.</p>
+        </div>
+        <div class="feature-item">
+            <h2>Feature 3</h2>
+            <p><b>Thuộc tính (Properties):</b> Những cách mà bạn có thể tạo kiểu cho một phần tử HTML. (Với trường hợp này thì color được xem là một trong những  thuộc tính của phần tử p). Chính vì vậy, với CSS thì bạn chỉ cần lựa chọn thuộc tính mà chính bạn muốn tác động nhất trong bộ quy tắc của mình</p>
+        </div>
+    </div>
+
+    <!-- Wrap layout -->
+    <div class="wrap-layout">
+        <div class="wrap-layout__item">1</div>
+        <div class="wrap-layout__item">2</div>
+        <div class="wrap-layout__item">3</div>
+        <div class="wrap-layout__item">4</div>
+        <div class="wrap-layout__item">5</div>
+    </div>
+
+    <!-- center layout -->
+    <div class="center-layout">
+        <h3 class="center-layout__item">
+            Center Item
+        </h3>
+    </div>
+
+    <!-- chart -->
+    <div class="chart-layout">
+        <div class="chart-layout-item" style="--percent: 10%">10%</div>
+        <div class="chart-layout-item" style="--percent: 20%">20%</div>
+        <div class="chart-layout-item" style="--percent: 30%">30%</div>
+        <div class="chart-layout-item" style="--percent: 40%">40%</div>
+        <div class="chart-layout-item" style="--percent: 50%">50%</div>
+        <div class="chart-layout-item" style="--percent: 60%">60%</div>
+        <div class="chart-layout-item" style="--percent: 69%">69%</div>
+        <div class="chart-layout-item" style="--percent: 96%">96%</div>
+        <div class="chart-layout-item" style="--percent: 80%">80%</div>
+        <div class="chart-layout-item" style="--percent: 100%">100%</div>
+    </div>
+
+    <!-- End -->
+    <div class="the-end">
+        <div class="the-end-first">
+            <p>Mình biết là số lượng phím tắt là rất lớn nên không thể nhớ được hết trong ngày một ngày hai được, và tất nhiên thì tốc độ code của bạn không thể cải thiện ngay được đâu.</p>
+        </div>
+
+        <div class="the-end-second">
+            <div class="the-end-second__one">
+                <p>Nếu thấy bài viết hữu ích, hãy upvote và clip bài viết cho mình nhé. Còn nếu bạn có các phím tắt hữu dụng nào khác, đừng ngại chia sẻ cùng mọi người bằng cách comment thêm xuống dưới bài viết này hoặc viết bài chia sẻ lên viblo nhé!</p>
+            </div>
+            <div class="the-end-second__two">
+                <p>Nhưng các cụ bảo rồi Trăm hay không bằng tay quen mà, cứ từ từ làm quen, sử dụng thường xuyên rồi một ngày đẹp trời, bạn sẽ "code như gió" mà có khi chính bạn còn không nhận ra đấy 😄😄😄😄</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
